@@ -1,70 +1,70 @@
-// import React, { useState, useEffect } from 'react';
-// import WordValidation from './WordValidation';
-// import wordExists from 'word-exists';
-// import Wordlelogo from './assets/wordle.png';
-// import { Link } from 'react-router-dom';
-// import ReplayIcon from '@mui/icons-material/Replay';
-// import { IconButton } from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import WordValidation from './WordValidation';
+import wordExists from 'word-exists';
+import Wordlelogo from './assets/wordle.png';
+import { Link } from 'react-router-dom';
+import ReplayIcon from '@mui/icons-material/Replay';
+import { IconButton } from '@mui/material';
 
 const HardLevel = () => {
-//   const [generatedWord, setGeneratedWord] = useState('');
-//   const [currentRow, setCurrentRow] = useState(0);
-//   const [gameWon, setGameWon] = useState(false);
-//   const [loss, setLoss] = useState(false);
-//  const imageStyle = {
-//     width: "200px",
-//     height: "180px",
-//     marginTop: "50px", // Add margin-top
-//     marginLeft: "20px"
-//       };
+  const [generatedWord, setGeneratedWord] = useState('');
+  const [currentRow, setCurrentRow] = useState(0);
+  const [gameWon, setGameWon] = useState(false);
+  const [loss, setLoss] = useState(false);
+ const imageStyle = {
+    width: "200px",
+    height: "180px",
+    marginTop: "50px", // Add margin-top
+    marginLeft: "20px"
+      };
 
-//   function refreshPage() {
-//     window.location.reload(false);
-//   }
+  function refreshPage() {
+    window.location.reload(false);
+  }
   
 
-//   useEffect(() => {
-//     // Check if the game has been won after the state update
-//     if (gameWon && currentRow === 5) {
-//       // You can perform any additional actions here
-//     }
-//   }, [gameWon, currentRow,loss]);
+  useEffect(() => {
+    // Check if the game has been won after the state update
+    if (gameWon && currentRow === 5) {
+      // You can perform any additional actions here
+    }
+  }, [gameWon, currentRow,loss]);
 
-//   useEffect(() => {
-//     if (!generatedWord) {
-//       generateRandomWord();
-//     }
-//   }, [generatedWord]);
+  useEffect(() => {
+    if (!generatedWord) {
+      generateRandomWord();
+    }
+  }, [generatedWord]);
 
-//   const generateRandomLetterWord = () => {
-//     const characters = 'abcdefghijklmnopqrstuvwxyz';
-//     let word = '';
-//     for (let i = 0; i < 7; i++) {
-//       const randomIndex = Math.floor(Math.random() * characters.length);
-//       word += characters.charAt(randomIndex);
-//     }
-//     return word;
-//   };
+  const generateRandomLetterWord = () => {
+    const characters = 'abcdefghijklmnopqrstuvwxyz';
+    let word = '';
+    for (let i = 0; i < 7; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      word += characters.charAt(randomIndex);
+    }
+    return word;
+  };
 
-//   const generateRandomWord = () => {
-//     while (true) {
-//       const randomWord = generateRandomLetterWord();
-//       if (wordExists(randomWord)) {
-//         setGeneratedWord(randomWord);
-//         break;
-//       }
-//     }
-//   };
-//   const handleGameWon = () => {
-//     if (!gameWon) {
-//       setCurrentRow((prevRow) => (prevRow < 5 ? prevRow + 1 : prevRow));
-//     }
-//   };
+  const generateRandomWord = () => {
+    while (true) {
+      const randomWord = generateRandomLetterWord();
+      if (wordExists(randomWord)) {
+        setGeneratedWord(randomWord);
+        break;
+      }
+    }
+  };
+  const handleGameWon = () => {
+    if (!gameWon) {
+      setCurrentRow((prevRow) => (prevRow < 5 ? prevRow + 1 : prevRow));
+    }
+  };
   
   console.log(generatedWord);
   return (
     <div >
-     {/* <div className="section-container" style={{ display: 'flex', flexDirection: 'column', 
+     <div className="section-container" style={{ display: 'flex', flexDirection: 'column', 
      alignItems: 'center', justifyContent: 'center', width: '100%', margin: '0', 
      textAlign: 'center' }}
 >
@@ -107,7 +107,7 @@ const HardLevel = () => {
 
 {/* </div> */}
 
-    </div> 
+    </div>
   );
 };
 
