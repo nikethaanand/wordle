@@ -64,7 +64,7 @@ const HardLevel = () => {
   console.log(generatedWord);
   return (
     <div >
-     <div className="section-container" style={{ display: 'flex', flexDirection: 'column', 
+     {/* <div className="section-container" style={{ display: 'flex', flexDirection: 'column', 
      alignItems: 'center', justifyContent: 'center', width: '100%', margin: '0', 
      textAlign: 'center' }}
 >
@@ -107,7 +107,7 @@ const HardLevel = () => {
 
 {/* </div> */}
 
-    </div>
+    </div> 
   );
 };
 
