@@ -15,7 +15,7 @@ const Level = () => {
 
              <h4>Play the Game.</h4>
              <div >
-                <Link to="/game/hardLevel">
+                <Link to="/game/normalLevel">
                     <button className="home-button">Normal </button>
                 </Link>
                 <Link to="/game/hardLevel">
