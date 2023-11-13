@@ -7,15 +7,13 @@ const Home = () => {
     const imageStyle = {
         width: "200px",
         height: "180px",
-        marginTop: "50px", // Add margin-top
+        marginTop: "50px", 
       };
 
       
     return(
     <div className=" parent-container">
-        {/* <h1 className="heading-main">Wordle </h1> */}
         <img src={Wordlelogo} alt="Wordlelogo" style={imageStyle}/>
-
         <h4>Play the Game.</h4>
         <div >
                 <Link to="/level">
@@ -26,7 +24,6 @@ const Home = () => {
                 </Link>
                
             </div>
-        {/* <Level/> */}
     </div>
 
     )
