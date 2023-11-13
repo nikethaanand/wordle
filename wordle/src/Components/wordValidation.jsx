@@ -142,7 +142,7 @@ function WordValidation({ wordLength, generatedWord, shouldContinue, onGameWon, 
           )
         }
         { gameWon && (<>
-          <p>You won the game! The word you guessed is {generatedWord}</p>
+          <h3>You won the game! The word you guessed is {generatedWord}</h3>
           <Link to="/level">
           <button className="home-button">Replay Game </button>
           </Link></>

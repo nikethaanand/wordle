@@ -60,7 +60,7 @@ const HardLevel = () => {
     }
   };
   
-  // console.log(generatedWord);
+   console.log(generatedWord);
   return (
     <div >
         <div className="section-container" style={{ display: 'flex', flexDirection: 'column', 
@@ -94,7 +94,7 @@ const HardLevel = () => {
 
                   {!loss ? (
                     <>
-                      <p>You Lost the game! The word is {generatedWord}</p>
+                      <h3>You Lost the game! The word is {generatedWord}</h3>
                       <Link to="/level">
                         <button className="home-button">Replay Game</button>
                       </Link>
