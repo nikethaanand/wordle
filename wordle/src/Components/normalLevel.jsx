@@ -63,7 +63,7 @@ const NormalLevel = () => {
           setCurrentRow((prevRow) => (prevRow < 6 ? prevRow + 1 : prevRow));
         }
       };
-  
+  //uncomment to test the code
   // console.log(generatedWord);
   return (
     <div >

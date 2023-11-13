@@ -59,8 +59,8 @@ const HardLevel = () => {
       setCurrentRow((prevRow) => (prevRow < 5 ? prevRow + 1 : prevRow));
     }
   };
-  
-   console.log(generatedWord);
+    //uncomment to test the code
+   //console.log(generatedWord);
   return (
     <div >
         <div className="section-container" style={{ display: 'flex', flexDirection: 'column', 
