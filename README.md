@@ -1,8 +1,8 @@
 # Wordle Game<br /><br />
 https://nikethaanand-wordle.netlify.app/
 <br/>
+![8A66479F-DBC7-482F-AE12-75FC009F098B_1_102_o](https://github.com/nikethaanand/wordle/assets/47215795/37cb4534-1d92-4f3a-9631-2fa31e4569f7)
 
-![8A66479F-DBC7-482F-AE12-75FC009F098B_1_102_o](https://github.com/nikethaanand/wordle/assets/47215795/e3ac3611-a1f0-4a13-afef-3a45dd6d7557)
 <br/><br/><br/>
 1)You have to guess the Wordle in six goes or less depending on the level.<br />
 2)Every word you enter must be in the word list. There are more than 10,000 words in this list, but only 2,309 (at the time of writing) are answers to a specific puzzle<br />
