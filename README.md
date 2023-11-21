@@ -1,5 +1,6 @@
-# Wordle Game
-
+# Wordle Game<br /><br />
+https://nikethaanand-wordle.netlify.app/
+<br/>
 1)You have to guess the Wordle in six goes or less depending on the level.<br />
 2)Every word you enter must be in the word list. There are more than 10,000 words in this list, but only 2,309 (at the time of writing) are answers to a specific puzzle<br />
 3)Only a valid word will be accepted as an attempt<br />
